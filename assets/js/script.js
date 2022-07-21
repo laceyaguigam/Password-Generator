@@ -5,8 +5,7 @@
 var generateBtn = document.querySelector("#generate");
 var specialChar = "!@#$%^&*()"
 var numChar = "1234567890"
-
-
+var lowerChar = "abcdefghijklmnopqrstuvwxyz"
 
 
 
@@ -16,8 +15,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+
 function generatePassword() {
   var possibleCharacters = ""
 
@@ -27,7 +26,7 @@ function generatePassword() {
 
   console.log(containSpecial)
 
-var containNumber = confirm("would you like to include numbers?")
+var containNumber = confirm("Would you like to include numbers?")
 
   if (containSpecial) {
     possibleCharacters += specialChar
@@ -36,7 +35,25 @@ var containNumber = confirm("would you like to include numbers?")
     possibleCharacters += numChar
   }
 
-console.log(possibleCharacters)
+  console.log(possibleCharacters)
+
+
+var containLower = confirm("Would you like to incluede lowercase characters?")
+
+  if (containSpecial) {
+    possibleCharacters += specialChar
+  }
+  if (containNumber) {
+    possibleCharacters += numChar
+  }
+  if (containLower) {
+    possibleCharacters += lowerChar
+  }
+ console.log(possibleCharacters)
+
+
+
+
 
 
   return characterLength
