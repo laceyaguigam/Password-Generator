@@ -6,7 +6,7 @@ var generateBtn = document.querySelector("#generate");
 var specialChar = "!@#$%^&*()"
 var numChar = "1234567890"
 var lowerChar = "abcdefghijklmnopqrstuvwxyz"
-
+var  upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
 // Write password to the #password input
@@ -49,11 +49,23 @@ var containLower = confirm("Would you like to incluede lowercase characters?")
   if (containLower) {
     possibleCharacters += lowerChar
   }
- console.log(possibleCharacters)
+    console.log(possibleCharacters)
 
+var containUpper = confirm("Would you like to include uppercase characters?")
 
-
-
+  if (containSpecial) {
+    possibleCharacters += specialChar
+  }
+  if (containNumber) {
+    possibleCharacters += numChar
+  }
+  if (containLower) {
+    possibleCharacters += lowerChar
+  }
+  if (containUpper) {
+    possibleCharacters += upperChar
+  }
+    console.log(possibleCharacters)
 
 
   return characterLength
@@ -62,17 +74,6 @@ var containLower = confirm("Would you like to incluede lowercase characters?")
 
 
 
-
-
-
-
-
-//else if () {
-/// window.alert("Click OK to include lowercase");
-//}
-//else if () {
-//window.alert("Click OK to include uppercase");
-//}
 //else {
 //window.prompt('Must select at least once character type');
 //}
