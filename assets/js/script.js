@@ -6,8 +6,8 @@ var generateBtn = document.querySelector("#generate");
 var specialChar = "!@#$%^&*()"
 var numChar = "1234567890"
 var lowerChar = "abcdefghijklmnopqrstuvwxyz"
-var  upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
+var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var noChar =""
 
 // Write password to the #password input
 function writePassword() {
@@ -67,17 +67,27 @@ var containUpper = confirm("Would you like to include uppercase characters?")
   }
     console.log(possibleCharacters)
 
+var charType = confirm("Must select at least one character type")
 
-  return characterLength
+if (containSpecial) {
+    possibleCharacters += specialChar
+  }
+  if (containNumber) {
+    possibleCharacters += numChar
+  }
+  if (containLower) {
+    possibleCharacters += lowerChar
+  }
+  if (containUpper) {
+    possibleCharacters += upperChar
+  }
+else if (charType) {                //This one didnt work the way it's supposed to
+    possibleCharacters -= noChar
 }
+    console.log(possibleCharacters)
 
-
-
-
-//else {
-//window.prompt('Must select at least once character type');
-//}
-//};
+  return password
+}
 
 
 
