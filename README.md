@@ -2,8 +2,7 @@
 
 ## Purpose
 
-
-Create a password generator that allows the user to create a strong password that meets certain criteria.
+Passwords are one of the most important parts of any web applications, whithout being able to input a password there would be no secure web applications. Create a password generator that allows the user to create a strong password that meets certain criteria in order to provide greater security. 
 
 
 The web application must have the following criteria:
