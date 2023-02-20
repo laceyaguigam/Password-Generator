@@ -39,6 +39,4 @@ https://laceyaguigam.github.io/Password-Generator/
 
 ## Contribution
 
-Google, TA's, Tutoring
-
 Made with ❤️ by Lacey Aguigam
