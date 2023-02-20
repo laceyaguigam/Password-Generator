@@ -15,6 +15,16 @@ The web application must have the following criteria:
 * password must be either displayed in an alert or written to the page
 
 
+## Installation 
+
+Clone the source code for the password generator from the password generator repository and save to desired location. 
+Then open password generator folder in vs code and open the index.html file in desired browser. 
+## Usage 
+
+Open password generator folder in vs code and open the index.html file in desired browser. 
+Once the index.html file is opened user will then answer the prompts followed by the generate password button. 
+After the button is clicked, a generated password based on the previously selected criteria will appear. 
+
 ## Built With
 * HTML
 * CSS
