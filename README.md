@@ -1,7 +1,20 @@
 # Password Generator
 
 ## Purpose
+
+
 Create a password generator that allows the user to create a strong password that meets certain criteria.
+
+
+The web application must have the following criteria:
+* when the button is clicked, a passowrd must be generated using a series of prompts for password criteria
+* must be able to select which criteria to include in the password
+* password must be between 8 and 128 characters 
+* must confirm whether to include lowercase, uppercase, numeric, and/or special characters
+* after each prompt, user input should be validated and at least one character type should be   selected
+* password generated after  each prompt is answered matching the selected criteria
+* password must be either displayed in an alert or written to the page
+
 
 ## Built With
 * HTML
